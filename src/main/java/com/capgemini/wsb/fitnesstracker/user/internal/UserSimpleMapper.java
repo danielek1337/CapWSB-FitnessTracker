@@ -1,7 +1,7 @@
 package com.capgemini.wsb.fitnesstracker.user.internal;
-import com.capgemini.wsb.fitnesstracker.user.api.User;
-import org.springframework.stereotype.Component;
 
+import org.springframework.stereotype.Component;
+import com.capgemini.wsb.fitnesstracker.user.api.User;
 
 @Component
 class UserSimpleMapper {
