@@ -32,8 +32,20 @@ public interface UserProvider {
      */
     List<User> findAllUsers();
 
+    /**
+     * Retrieves a list of users who are older than the specified date.
+     *
+     * @param date the date to compare users' birthdates against
+     * @return a list of users who are older than the given date
+     */
     List<User> getUsersOlderThan(LocalDate date);
 
+    /**
+     * Finds a user by their email address, ignoring case sensitivity.
+     *
+     * @param email the email address of the user to search for
+     * @return an {@link Optional} containing the found user, or {@link Optional#empty()} if no user is found
+     */
     List<User> getUserByEmailIgnoreCase(String email);
 
 }

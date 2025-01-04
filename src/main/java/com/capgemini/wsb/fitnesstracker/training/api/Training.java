@@ -5,15 +5,30 @@ import com.capgemini.wsb.fitnesstracker.user.api.User;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.util.Date;
 @Entity
 @Table(name = "trainings")
+@Setter
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
+
+/**
+ * Creates a new training session with the specified parameters.
+ *
+ * @param user         the user associated with this training session
+ * @param startTime    the starting time of the training session
+ * @param activityType the type of activity performed during the session
+ * @param distance     the total distance covered during the session
+ * @param endTime      the ending time of the training session
+ * @param averageSpeed the average speed achieved during the session
+ */
+
+
 public class Training {
 
     @Id
